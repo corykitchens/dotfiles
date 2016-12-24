@@ -1,1 +1,47 @@
-/Users/corykitchens/.vimrc
+" URL: https://github.com/corykitchens/dotfiles
+" Author: Cory Kitchens
+
+set nocompatible
+filetype off
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#rc()
+
+""""""""""""""""""""""""""""""""""""""""""""""""
+" Plugins
+""""""""""""""""""""""""""""""""""""""""""""""""
+Bundle 'gmarik/vundle'
+Bundle 'scrooloose/nerdtree'
+Plugin 'tpope/vim-fireplace'
+Plugin 'pangloss/vim-javascript'
+Plugin 'elzr/vim-json'
+Plugin 'guns/vim-clojure-static'
+Plugin 'guns/vim-clojure-highlight'
+Plugin 'luochen1990/rainbow'
+
+"""""""""""""""""""""""""""""""""""""""""""""""
+" Syntax Highlighting and Color Scheme
+"""""""""""""""""""""""""""""""""""""""""""""""
+"Display line numbers
+
+filetype plugin indent on
+syntax enable "syntax highlighting"
+set background=dark
+colorscheme onedark
+
+""""""""""""""""""""""""""""""""""""""""""""""
+" Misc UI
+""""""""""""""""""""""""""""""""""""""""""""""
+set number
+set smartindent
+set tabstop=2
+set shiftwidth=2
+set expandtab
+set clipboard=unnamed
+set ruler
+set expandtab
+set showcmd "show command in bottom bar
+noremap <Up> <NOP>
+noremap <Down> <NOP>
+noremap <Left> <NOP>
+noremap <Right> <NOP>
+let g:rainbow_active = 1 
