@@ -39,4 +39,8 @@ task :install do
   end
   `ln -s $PWD/#{linkable} #{target}`
   end
+  vim_colors = Dir.glob("vim/colors/*")
+  vim_colors.each do |color_file|
+    FileUtils.cp(color_file, Dir.home() + "/.vim/colors/")
+  end
 end  
